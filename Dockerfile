@@ -2,7 +2,7 @@
 FROM centos:latest
 
 #作者
-MAINTAINER freedoms1988 zzt328697768@gmail.com
+MAINTAINER kalagxw
 
 #用户
 USER root
