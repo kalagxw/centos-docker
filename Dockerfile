@@ -5,10 +5,10 @@ FROM centos:latest
 MAINTAINER kalagxw
 
 #用户
-USER root
+#USER root
 
 #更新yum
-#RUN yum update
+RUN yum update -y
 
 #安装vim wget openssh-server openssh-clients
 RUN yum install -y vim-minimal \
