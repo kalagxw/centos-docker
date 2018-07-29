@@ -11,7 +11,13 @@ USER root
 RUN yum update
 
 #安装vim wget openssh-server openssh-clients
-RUN yum install -y nano wget curl openssh-server openssh-clients
+RUN yum install -y vim-minimal \
+wget \
+curl \
+openssh-server \
+openssh-clients \
+openssh \
+epel-release
 
 #修改ssh配置
 RUN sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
