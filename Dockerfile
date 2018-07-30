@@ -37,4 +37,4 @@ RUN echo 'root:root'|chpasswd
 EXPOSE 22
 
 #镜像运行时，启动sshd
-CMD ["/usr/sbin/sshd start"]
+CMD ["/usr/sbin/sshd", "-D"]
